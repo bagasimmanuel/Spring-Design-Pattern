@@ -33,7 +33,7 @@ public class BuilderApplication {
         // Daripada kamu buat setting dan getter satu satu, terus km buat .setNama, .setNim dll, bisa pakai Builder
         // Kalau pakai builder akan return Mahasiswa builder dimana dia ntar bisa membuatkan yang .builder.nama().nim().alamat.().build();
 
-        Mahasiswa mahasiswa2 = Mahasiswa.builder().nama("Bagas").nim("123").alamat("Duar").tanggalLahir(new Date()).hobi(Arrays.asList("Makan","Tidur").build();
+        Mahasiswa mahasiswa2 = Mahasiswa.builder().nama("Bagas").nim("123").alamat("Duar").tanggalLahir(new Date()).hobi(Arrays.asList("Makan","Tidur")).build();
         System.out.println(mahasiswa2);
     }
 
