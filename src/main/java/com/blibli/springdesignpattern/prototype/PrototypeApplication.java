@@ -36,7 +36,7 @@ public class PrototypeApplication {
         @Bean("premiumCustomer")
         @Scope("prototype") // Kalau ada 2 Tipe
         public Customer premiumCustomer(){
-            return Customer.builder().category("VVVVIP").discount(10).build();
+            return Customer.builder().category("VVVVIP").discount(50).build();
         }
     }
 

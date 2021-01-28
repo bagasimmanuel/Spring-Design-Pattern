@@ -1,5 +1,6 @@
 package com.blibli.springdesignpattern.singleton;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -25,7 +26,6 @@ public class SingletonApplication {
 
         Contoh contoh1 = context.getBean(Contoh.class);
         Contoh contoh2 = context.getBean(Contoh.class);
-
         System.out.println(contoh1 == contoh2);
     }
 
