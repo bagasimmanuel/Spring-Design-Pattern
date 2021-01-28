@@ -30,7 +30,7 @@ public class ChainApplication {
     }
 
     @SpringBootApplication
-    public static class HelloController(){
+    public static class HelloController{
 
         @GetMapping(value="/",produces = MediaType.APPLICATION_JSON_VALUE)
         public Contoh helloWorld(){
