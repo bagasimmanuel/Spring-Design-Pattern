@@ -1,5 +1,6 @@
 package com.blibli.springdesignpattern.adapter;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -36,6 +37,10 @@ public class AdapterPattern {
             return new MyDownHealthIndicator();
         }
 
+    }
+
+    public static void main(String[] args){
+        SpringApplication.run(Application.class);
     }
 
 }
