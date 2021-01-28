@@ -9,7 +9,7 @@ public class SingletonApplication {
 
     @SpringBootApplication
     public static class Configuration{
-        
+
         @Bean
         public Contoh contoh(){
             return new Contoh();
